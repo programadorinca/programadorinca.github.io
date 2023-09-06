@@ -451,6 +451,7 @@
        url('../../assets/fonts/KimuraSans-Italic.otf') format('woff');
   font-style: italic;
   color: #CFFF58;
+  font-size: small;
 }
 
 .main .content .sign-container .assinatura .right .bottom {
@@ -505,6 +506,7 @@
   src: url('../../assets/fonts/KimuraSans-Italic.otf') format('woff2'),
        url('../../assets/fonts/KimuraSans-Italic.otf') format('woff');
   font-style: italic;
+  font-size: small;
   color: #CFFF58;
 }
 
@@ -512,6 +514,7 @@
   src: url('../../assets/fonts/KimuraSans-Italic.otf') format('woff2'),
        url('../../assets/fonts/KimuraSans-Italic.otf') format('woff');
   font-style: italic;
+  font-size: small;
   color: #27DAC8;
 }
 
