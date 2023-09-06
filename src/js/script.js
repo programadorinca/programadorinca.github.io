@@ -12,10 +12,6 @@ $(function () {
         $(".departamento").text($(this).val());
     });
 
-    $("#email").on("input", function () {
-        $(".email").text($(this).val());
-    });
-
     $(".baixar").on("click", function (e) {
         gerarImagem($(".nome").text());
     });
