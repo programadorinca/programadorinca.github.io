@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Assinatura de E-mail</title>
+    <link rel="shortcut icon" href="./assets/img/sua-logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@400" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/js/html2canvas.min.js"></script>
+    <script defer src="./src/js/script.js"></script>
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="inner-container">
+            <div class="title">
+                <span class="material-symbols-rounded icon">mail</span>
+                <div>
+                    <h1>Gerador de Assinatura de E-mail</h1>
+                    <h5>Preencha os dados abaixo para gerar sua assinatura.</h5>
+                </div>
+            </div>
+            <section class="content dados">
+                <!-- <div class="profile">
+                    <input type="file" id="uploadPhoto" accept="image/*" hidden>
+                    <figure class="foto">
+                        <img class="img-preview" src="./assets/img/profile.png" alt="Perfil">
+                        <div class="delete">
+                            <span class="material-symbols-rounded icon">delete</span> Remover
+                        </div>
+                    </figure>
+                    <label class="btn secondary md add-foto" for="uploadPhoto">
+                        <div class="text">Adicionar foto</div>
+                    </label>
+                </div> -->
+                <form class="form">
+                    <div class="row">
+                        <div class="input">
+                            <input type="text" id="nome" placeholder="Nome" required>
+                            <label for="nome">Nome</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" id="email" placeholder="Email" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input">
+                            <input type="text" id="cargo" placeholder="Cargo" required>
+                            <label for="cargo">Cargo</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" id="departamento" placeholder="Departamento" required>
+                            <label for="departamento">Departamento</label>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <div class="content preview">
+                <div class="sign-container">
+                    <div class="assinatura">
+                        <div class="left">
+                        </div>
+                        <div class="right">
+                            <!-- <img src="./assets/img/sua-logo.svg" alt="sua logo" class="logo"> -->
+                            <div class="top">
+                                <div class="name">
+                                    <h2 class="nome">Seu Nome</h2>
+                                </div>
+                                <div class="email-cargo">
+                                    <div class="mail">
+                                        <span class="email">seu.email@empresa.com.br</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <div class="cargo">cargo</div>
+                            </div>
+                            <div class="bottom">
+                                <div class="departamento">departamento</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="baixar btn primary lg">
+                <div class="text">Baixar assinatura</div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

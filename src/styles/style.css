@@ -1,0 +1,625 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font: 400 16px/24px "Sora", sans-serif;
+  color: #56677D;
+  text-decoration: none;
+  outline: none;
+}
+
+.inner-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 48px 24px;
+}
+
+.main .title {
+  margin-bottom: 56px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .main .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 0 32px;
+  }
+}
+
+.main .title .icon {
+  color: #018FFB;
+  font-size: 32px;
+  width: 64px;
+  height: 64px;
+  background-color: #E2F1FE;
+  border-radius: 12px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .title h1 {
+  font: 700 24px/32px "Sora", sans-serif;
+  color: #0E0E10;
+}
+
+.main .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 40px;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #CDD6E0;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .main .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* .main .content .profile {
+  width: 192px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 576px) {
+  .main .content .profile {
+    width: 100%;
+  }
+}
+
+.main .content .profile .foto {
+  width: 192px;
+  height: 192px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .main .content .profile .foto {
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+}
+
+.main .content .profile .foto .delete {
+  position: absolute;
+  padding: 8px;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  cursor: pointer;
+  font: 400 14px/24px "Sora", sans-serif;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.main .content .profile .foto .delete.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.main .content .profile .foto .delete .icon {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.main .content .profile .foto img {
+  max-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+} */
+
+.main .content .form {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+
+.main .content .form .row {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .main .content .form .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main .content .form .row .input {
+  width: 100%;
+  height: 56px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .content .form .row .input label {
+  color: #7A899F;
+  pointer-events: none;
+  -webkit-transition: .16s linear;
+  transition: .16s linear;
+}
+
+.main .content .form .row .input input {
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #CDD6E0;
+  -webkit-transition: .16s linear;
+  transition: .16s linear;
+  font-weight: 600;
+  color: #0E0E10;
+}
+
+.main .content .form .row .input input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 56px white inset;
+}
+
+.main .content .form .row .input input::-webkit-input-placeholder {
+  opacity: 0%;
+}
+
+.main .content .form .row .input input:-ms-input-placeholder {
+  opacity: 0%;
+}
+
+.main .content .form .row .input input::-ms-input-placeholder {
+  opacity: 0%;
+}
+
+.main .content .form .row .input input::placeholder {
+  opacity: 0%;
+}
+
+.main .content .form .row .input input:valid, .main .content .form .row .input input:focus, .main .content .form .row .input input:not(:placeholder-shown) {
+  inset: 16px 0 0;
+}
+
+.main .content .form .row .input input:valid + label, .main .content .form .row .input input:focus + label, .main .content .form .row .input input:not(:placeholder-shown) + label {
+  font: 400 12px/16px "Sora", sans-serif;
+  position: absolute;
+  top: 4px;
+}
+
+.main .content.preview {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.main .content .sign-container {
+  width: 100%;
+  overflow-x: auto;
+  /* border: 1px solid rgba(0, 0, 0, 0.04);
+  z-index: 2;
+  border-radius: 0 112px 0 112px; */
+}
+
+.main .content .sign-container::-webkit-scrollbar {
+  display: none;
+}
+
+.main .content .sign-container .assinatura {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: calc(256px + 542px);
+  height: 240px;
+  /* border-radius: 0 112px 0 112px; */
+  overflow: hidden;
+  position: relative;
+  /* background-color: #FFFFFF; */
+  background-image: url("../../assets/img/fundo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* .main .content .sign-container .assinatura::after {
+  content: "";
+  width: 240px;
+  height: 240px;
+  border-left: 6px solid #018FFB;
+  border-bottom: 6px solid #018FFB;
+  border-radius: 0 0 0 112px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.main .content .sign-container .assinatura::before {
+  content: "";
+  width: 240px;
+  height: 240px;
+  border-right: 6px solid #018FFB;
+  border-top: 6px solid #018FFB;
+  border-radius: 0 112px 0 0;
+  position: absolute;
+  top: -6px;
+  right: 0;
+  z-index: 2;
+} */
+
+.main .content .sign-container .assinatura .left {
+  padding: 124px 24px 24px 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: 150px;
+}
+
+/* .main .content .sign-container .assinatura .left figure {
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 6px solid #018FFB;
+} */
+
+/* .main .content .sign-container .assinatura .left figure img {
+  max-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: rotate(-35deg);
+  border: 4px solid #FFFFFF;
+  border-radius: 50%;
+} */
+
+.main .content .sign-container .assinatura .right {
+  padding: 24px 0px;
+  width: 542px;
+  min-width: 542px;
+  height: 240px;
+  max-height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4px;
+  position: relative;
+}
+
+/* .main .content .sign-container .assinatura .right .logo {
+  position: absolute;
+  width: 96px;
+  top: 56px;
+  right: 56px;
+} */
+
+.main .content .sign-container .assinatura .right .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4px;
+}
+
+.main .content .sign-container .assinatura .right .top .name {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .content .sign-container .assinatura .right .top .name .arrow {
+  position: absolute;
+  left: -24px;
+}
+
+.main .content .sign-container .assinatura .right .top .name h2 {
+  /* font: 700 24px/32px "Sora", sans-serif; */
+  src: url('../../assets/fonts/KimuraSans-Bold.otf') format('woff2'),
+       url('../../assets/fonts/KimuraSans-Bold.otf') format('woff');
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.main .content .sign-container .assinatura .right .top .email-cargo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.main .content .sign-container .assinatura .right .top .email-cargo * {
+  src: url('../../assets/fonts/KimuraSans-Italic.otf') format('woff2'),
+       url('../../assets/fonts/KimuraSans-Italic.otf') format('woff');
+  font-style: italic;
+  color: #CFFF58;
+}
+
+.main .content .sign-container .assinatura .right .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4px;
+}
+
+/* .main .content .sign-container .assinatura .right .bottom .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.main .content .sign-container .assinatura .right .bottom .mail .icon {
+  font-size: 20px;
+  color: #018FFB;
+}
+
+.main .content .sign-container .assinatura .right .bottom .mail .email {
+  font: 400 16px/24px "Sora", sans-serif;
+}
+
+.main .content .sign-container .assinatura .right .bottom .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+} */
+
+/* .main .content .sign-container .assinatura .right .bottom .phone .icon {
+  font-size: 20px;
+  color: #018FFB;
+} */
+
+.main .content .sign-container .assinatura .right .middle .cargo {
+  src: url('../../assets/fonts/KimuraSans-Italic.otf') format('woff2'),
+       url('../../assets/fonts/KimuraSans-Italic.otf') format('woff');
+  font-style: italic;
+  color: #CFFF58;
+}
+
+.main .content .sign-container .assinatura .right .bottom .departamento {
+  src: url('../../assets/fonts/KimuraSans-Italic.otf') format('woff2'),
+       url('../../assets/fonts/KimuraSans-Italic.otf') format('woff');
+  font-style: italic;
+  color: #27DAC8;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: #CDD6E0;
+  padding: 8px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  opacity: 0;
+  inset: 50%;
+  border-radius: 8px;
+  z-index: 0;
+  -webkit-transition: .08s linear;
+  transition: .08s linear;
+}
+
+.btn.lg {
+  height: 56px;
+}
+
+.btn.md {
+  height: 48px;
+}
+
+.btn.md .text {
+  font: 600 14px/24px "Sora", sans-serif;
+}
+
+.btn.sm {
+  height: 40px;
+}
+
+.btn.xs {
+  height: 32px;
+}
+
+.btn.xxs {
+  height: 24px;
+}
+
+.btn .text {
+  font-weight: 600;
+  color: #7A899F;
+  z-index: 1;
+}
+
+.btn.primary {
+  background-color: #018FFB;
+}
+
+.btn.primary .text {
+  color: #FFFFFF;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 1px solid #018FFB;
+}
+
+.btn.secondary::after {
+  background-color: #018FFB;
+}
+
+.btn.secondary .text {
+  color: #018FFB;
+}
+
+.btn.disabled, .btn:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+.btn:hover::after {
+  opacity: .08;
+  inset: 0;
+}
+
+.btn:active::after {
+  opacity: .16;
+  inset: 0;
+}
+
+.link {
+  font-weight: 600;
+}
+
+.link.primary {
+  color: #018FFB;
+}
+/*# sourceMappingURL=style.css.map */
